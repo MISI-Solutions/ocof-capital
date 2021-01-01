@@ -329,4 +329,104 @@ main {
   font-size: 32px;
   font-family: "Alegreya", serif;
 }
+
+#venture {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#venture .wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#venture aside {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #c19313;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 52px;
+}
+
+#venture aside p {
+  color: #c19313;
+}
+
+#venture aside span {
+  color: #c19313;
+  font-weight: 500;
+  font-size: 32px;
+  font-family: "Alegreya", serif;
+}
+
+#venture .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#venture .container h2 {
+  text-transform: uppercase;
+  color: #c19313;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 500;
+  margin-bottom: 14px;
+  text-align: right;
+}
+
+#venture .container img {
+  margin-left: auto;
+}
+
+#venture .container p {
+  margin-top: 51px;
+  width: 585px;
+  color: #04243c;
+  font-size: 20px;
+  margin: 28px 0 41px;
+  text-align: right;
+}
+
+#venture .container a {
+  font-weight: 500;
+  font-size: 20px;
+  color: #0c0c0c;
+}
+
+#venture .container a img {
+  margin-left: 19px;
+}
+
+#footer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
 /*# sourceMappingURL=style.css.map */
