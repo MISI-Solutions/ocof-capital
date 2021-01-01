@@ -34,22 +34,32 @@ input:focus {
   outline: none;
 }
 
-#bgVideo {
+.bgVideo {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
   z-index: -2;
 }
 
-#bgGradient {
+.bgImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.fullBgGradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: 999;
@@ -57,8 +67,19 @@ input:focus {
   z-index: -1;
 }
 
-nav {
-  margin: 40px 150px;
+.placeholder {
+  width: 440px;
+  height: 100%;
+}
+
+#hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#hero nav {
+  padding: 40px 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,26 +91,26 @@ nav {
           align-items: center;
 }
 
-nav img {
+#hero nav #nav-logo {
   width: 159px;
 }
 
-nav .nav-links a:not(:last-child) {
+#hero nav .nav-links a:not(:last-child) {
   margin-right: 107px;
 }
 
-nav .nav-links a {
+#hero nav .nav-links a {
   font-size: 18px;
   line-height: 25px;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
 
-nav .nav-links a:hover {
+#hero nav .nav-links a:hover {
   color: #04243c;
 }
 
-nav .button {
+#hero nav .button {
   padding: 8px 23px;
   color: #04243c;
   font-size: 18px;
@@ -99,12 +120,12 @@ nav .button {
   transition: all 0.25s;
 }
 
-nav .button:hover {
+#hero nav .button:hover {
   color: #d7e0e7;
   background-color: #04243c;
 }
 
-header {
+#hero header {
   z-index: -1;
   position: absolute;
   top: 0;
@@ -127,7 +148,7 @@ header {
           flex-direction: column;
 }
 
-header h2 {
+#hero header h2 {
   margin: 8px 0;
   font-family: "Alegreya", serif;
   color: #154671;
@@ -137,15 +158,15 @@ header h2 {
   line-height: 49px;
 }
 
-header img:first-child {
+#hero header img:first-child {
   margin-bottom: 41px;
 }
 
-header img:last-child {
+#hero header img:last-child {
   margin-top: 42px;
 }
 
-#services {
+#hero #services {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -162,7 +183,7 @@ header img:last-child {
           align-items: center;
 }
 
-#services h3 {
+#hero #services h3 {
   font-family: "Alegreya", serif;
   color: #154671;
   font-weight: bold;
@@ -170,17 +191,32 @@ header img:last-child {
   line-height: 38px;
 }
 
-#services p {
+#hero #services p {
   color: #154671;
   font-size: 18px;
   line-height: 25px;
 }
 
-#services .eliteTraderTraining {
+#hero #services .eliteTraderTraining {
   text-align: center;
 }
 
-#services .advisoryServices {
+#hero #services .advisoryServices {
   text-align: right;
+}
+
+#about {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about main {
+  width: 100%;
+  height: 100%;
+  background: rgba(240, 243, 246, 0.8);
 }
 /*# sourceMappingURL=style.css.map */
