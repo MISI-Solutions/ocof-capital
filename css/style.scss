@@ -260,10 +260,19 @@ main {
       margin: 28px 0 41px;
     }
 
+    .hover-move {
+      transition: transform 0.3s ease-in-out;
+    }
+    .hover-move:focus,
+    .hover-move:hover {
+      transform: translateX(20px);
+    }
+
     a {
       font-weight: 500;
       font-size: 20px;
-      color: #0c0c0c;
+      color: #04243c;
+
       img {
         margin-left: 19px;
       }
@@ -353,15 +362,6 @@ main {
       font-size: 20px;
       margin: 28px 0 41px;
       text-align: right;
-    }
-
-    a {
-      font-weight: 500;
-      font-size: 20px;
-      color: #0c0c0c;
-      img {
-        margin-left: 19px;
-      }
     }
   }
 }
