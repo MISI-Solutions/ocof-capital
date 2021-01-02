@@ -76,6 +76,19 @@ input:focus {
   z-index: -1;
 }
 
+.button {
+  padding: 8px 23px;
+  color: $primary;
+  font-size: 18px;
+  line-height: 25px;
+  border: 2px solid $primary;
+  transition: all 0.25s;
+}
+.button:hover {
+  color: #d7e0e7;
+  background-color: $primary;
+}
+
 .placeholder {
   width: 440px;
   height: 100%;
@@ -115,19 +128,6 @@ main {
       a:hover {
         color: $primary;
       }
-    }
-
-    .button {
-      padding: 8px 23px;
-      color: $primary;
-      font-size: 18px;
-      line-height: 25px;
-      border: 2px solid $primary;
-      transition: all 0.25s;
-    }
-    .button:hover {
-      color: #d7e0e7;
-      background-color: $primary;
     }
   }
 
@@ -370,4 +370,70 @@ main {
   position: relative;
   width: 100vw;
   height: 100vh;
+}
+
+#logo-fix {
+  position: fixed;
+  top: 56px;
+  left: 150px;
+  width: 110px;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+#logo-fix.active {
+  opacity: 1;
+}
+
+#page-buttons {
+  position: fixed;
+  width: 330px;
+  top: 0;
+  right: 0px;
+  margin-top: 72px;
+  transition: opacity 0.3s;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  p {
+    margin: 0 auto 255px;
+    cursor: pointer;
+  }
+
+  .box {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border: 1px solid rgba(21, 70, 113, 0.5);
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    color: rgba(21, 70, 113, 0.5);
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .box.active {
+    border: 2px solid #154671;
+    color: #154671;
+    font-weight: 600;
+  }
+  .box:hover,
+  .box.focus {
+    font-weight: 600;
+    color: #154671;
+  }
+
+  span.line {
+    width: 2px;
+    height: 15px;
+    margin: 6px auto;
+    background-color: rgba(21, 70, 113, 0.5);
+  }
+  span.line.active {
+    background-color: #154671;
+  }
+}
+#page-buttons.active {
+  opacity: 1;
 }
