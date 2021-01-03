@@ -99,13 +99,13 @@ main {
   padding-left: 150px;
 }
 
-#ocof-capital {
+#home {
   position: relative;
   width: 100vw;
   height: 100vh;
 }
 
-#ocof-capital nav {
+#home nav {
   padding: 40px 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,26 +118,26 @@ main {
           align-items: center;
 }
 
-#ocof-capital nav #nav-logo {
+#home nav #nav-logo {
   width: 159px;
 }
 
-#ocof-capital nav .nav-links a:not(:last-child) {
+#home nav .nav-links a:not(:last-child) {
   margin-right: 107px;
 }
 
-#ocof-capital nav .nav-links a {
+#home nav .nav-links a {
   font-size: 18px;
   line-height: 25px;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
 
-#ocof-capital nav .nav-links a:hover {
+#home nav .nav-links a:hover {
   color: #04243c;
 }
 
-#ocof-capital header {
+#home header {
   z-index: -1;
   position: absolute;
   top: 0;
@@ -160,7 +160,7 @@ main {
           flex-direction: column;
 }
 
-#ocof-capital header h2 {
+#home header h2 {
   margin: 8px 0;
   font-family: "Alegreya", serif;
   color: #154671;
@@ -170,15 +170,15 @@ main {
   line-height: 49px;
 }
 
-#ocof-capital header img:first-child {
+#home header img:first-child {
   margin-bottom: 41px;
 }
 
-#ocof-capital header img:last-child {
+#home header img:last-child {
   margin-top: 42px;
 }
 
-#ocof-capital #services {
+#home #services {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -195,7 +195,7 @@ main {
           align-items: center;
 }
 
-#ocof-capital #services h3 {
+#home #services h3 {
   font-family: "Alegreya", serif;
   color: #154671;
   font-weight: bold;
@@ -203,17 +203,17 @@ main {
   line-height: 38px;
 }
 
-#ocof-capital #services p {
+#home #services p {
   color: #154671;
   font-size: 18px;
   line-height: 25px;
 }
 
-#ocof-capital #services .eliteTraderTraining {
+#home #services .eliteTraderTraining {
   text-align: center;
 }
 
-#ocof-capital #services .advisoryServices {
+#home #services .advisoryServices {
   text-align: right;
 }
 
@@ -437,10 +437,13 @@ main {
   position: fixed;
   top: 56px;
   left: 150px;
-  width: 110px;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
   opacity: 0;
+}
+
+#logo-fix img {
+  width: 110px;
 }
 
 #logo-fix.active {
@@ -483,8 +486,6 @@ main {
   place-items: center;
   font-size: 18px;
   color: rgba(21, 70, 113, 0.5);
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
   cursor: pointer;
 }
 
