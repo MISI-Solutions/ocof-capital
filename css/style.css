@@ -99,13 +99,13 @@ main {
   padding-left: 150px;
 }
 
-#hero {
+#ocof-capital {
   position: relative;
   width: 100vw;
   height: 100vh;
 }
 
-#hero nav {
+#ocof-capital nav {
   padding: 40px 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,26 +118,26 @@ main {
           align-items: center;
 }
 
-#hero nav #nav-logo {
+#ocof-capital nav #nav-logo {
   width: 159px;
 }
 
-#hero nav .nav-links a:not(:last-child) {
+#ocof-capital nav .nav-links a:not(:last-child) {
   margin-right: 107px;
 }
 
-#hero nav .nav-links a {
+#ocof-capital nav .nav-links a {
   font-size: 18px;
   line-height: 25px;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
 
-#hero nav .nav-links a:hover {
+#ocof-capital nav .nav-links a:hover {
   color: #04243c;
 }
 
-#hero header {
+#ocof-capital header {
   z-index: -1;
   position: absolute;
   top: 0;
@@ -160,7 +160,7 @@ main {
           flex-direction: column;
 }
 
-#hero header h2 {
+#ocof-capital header h2 {
   margin: 8px 0;
   font-family: "Alegreya", serif;
   color: #154671;
@@ -170,15 +170,15 @@ main {
   line-height: 49px;
 }
 
-#hero header img:first-child {
+#ocof-capital header img:first-child {
   margin-bottom: 41px;
 }
 
-#hero header img:last-child {
+#ocof-capital header img:last-child {
   margin-top: 42px;
 }
 
-#hero #services {
+#ocof-capital #services {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -195,7 +195,7 @@ main {
           align-items: center;
 }
 
-#hero #services h3 {
+#ocof-capital #services h3 {
   font-family: "Alegreya", serif;
   color: #154671;
   font-weight: bold;
@@ -203,21 +203,21 @@ main {
   line-height: 38px;
 }
 
-#hero #services p {
+#ocof-capital #services p {
   color: #154671;
   font-size: 18px;
   line-height: 25px;
 }
 
-#hero #services .eliteTraderTraining {
+#ocof-capital #services .eliteTraderTraining {
   text-align: center;
 }
 
-#hero #services .advisoryServices {
+#ocof-capital #services .advisoryServices {
   text-align: right;
 }
 
-#about {
+#about-us {
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -226,11 +226,11 @@ main {
   display: flex;
 }
 
-#about main {
+#about-us main {
   background: rgba(240, 243, 246, 0.8);
 }
 
-#about main h2 {
+#about-us main h2 {
   text-transform: uppercase;
   color: #c19313;
   font-size: 24px;
@@ -238,7 +238,7 @@ main {
   font-weight: 500;
 }
 
-#about main h3 {
+#about-us main h3 {
   margin: 9px 0 34px;
   width: 470px;
   font-family: "Alegreya", serif;
@@ -248,14 +248,14 @@ main {
   font-weight: 500;
 }
 
-#about main p {
+#about-us main p {
   margin-top: 51px;
   width: 585px;
   color: #04243c;
   font-size: 20px;
 }
 
-#trading {
+#elite-trading {
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -264,7 +264,7 @@ main {
   display: flex;
 }
 
-#trading .wrapper {
+#elite-trading .wrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,7 +274,7 @@ main {
           justify-content: space-between;
 }
 
-#trading .container h2 {
+#elite-trading .container h2 {
   text-transform: uppercase;
   color: #c19313;
   font-size: 24px;
@@ -283,7 +283,7 @@ main {
   margin-bottom: 14px;
 }
 
-#trading .container p {
+#elite-trading .container p {
   margin-top: 51px;
   width: 585px;
   color: #04243c;
@@ -291,30 +291,30 @@ main {
   margin: 28px 0 41px;
 }
 
-#trading .container .hover-move {
+#elite-trading .container .hover-move {
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-#trading .container .hover-move:focus,
-#trading .container .hover-move:hover {
+#elite-trading .container .hover-move:focus,
+#elite-trading .container .hover-move:hover {
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
 }
 
-#trading .container a {
+#elite-trading .container a {
   font-weight: 500;
   font-size: 20px;
   color: #04243c;
 }
 
-#trading .container a img {
+#elite-trading .container a img {
   margin-left: 19px;
 }
 
-#trading aside {
+#elite-trading aside {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -332,18 +332,18 @@ main {
   line-height: 52px;
 }
 
-#trading aside p {
+#elite-trading aside p {
   color: #c19313;
 }
 
-#trading aside span {
+#elite-trading aside span {
   color: #c19313;
   font-weight: 500;
   font-size: 32px;
   font-family: "Alegreya", serif;
 }
 
-#venture {
+#venture-capitalist {
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -352,7 +352,7 @@ main {
   display: flex;
 }
 
-#venture .wrapper {
+#venture-capitalist .wrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,7 +362,7 @@ main {
           justify-content: space-between;
 }
 
-#venture aside {
+#venture-capitalist aside {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,18 +380,18 @@ main {
   line-height: 52px;
 }
 
-#venture aside p {
+#venture-capitalist aside p {
   color: #c19313;
 }
 
-#venture aside span {
+#venture-capitalist aside span {
   color: #c19313;
   font-weight: 500;
   font-size: 32px;
   font-family: "Alegreya", serif;
 }
 
-#venture .container {
+#venture-capitalist .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,7 +404,7 @@ main {
           flex-direction: column;
 }
 
-#venture .container h2 {
+#venture-capitalist .container h2 {
   text-transform: uppercase;
   color: #c19313;
   font-size: 24px;
@@ -414,11 +414,11 @@ main {
   text-align: right;
 }
 
-#venture .container img {
+#venture-capitalist .container img {
   margin-left: auto;
 }
 
-#venture .container p {
+#venture-capitalist .container p {
   margin-top: 51px;
   width: 585px;
   color: #04243c;
@@ -468,7 +468,7 @@ main {
           flex-direction: column;
 }
 
-#page-buttons p {
+#page-buttons #scroll-up-button {
   margin: 0 auto 255px;
   cursor: pointer;
 }
