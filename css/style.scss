@@ -397,6 +397,7 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  pointer-events: none;
 
   #scroll-up-button {
     margin: 0 auto 255px;
@@ -438,4 +439,21 @@ main {
 }
 #page-buttons.active {
   opacity: 1;
+  pointer-events: all;
+}
+
+#scroll-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: auto;
+  overflow-x: hidden;
+  flex: none;
+  flex-flow: column nowrap;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: center;
+  flex: none;
 }

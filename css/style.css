@@ -469,6 +469,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  pointer-events: none;
 }
 
 #page-buttons #scroll-up-button {
@@ -514,5 +515,32 @@ main {
 
 #page-buttons.active {
   opacity: 1;
+  pointer-events: all;
+}
+
+#scroll-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+  overflow-x: hidden;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 /*# sourceMappingURL=style.css.map */
