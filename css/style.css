@@ -487,6 +487,8 @@ main {
   place-items: center;
   font-size: 18px;
   color: rgba(21, 70, 113, 0.5);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   cursor: pointer;
 }
 
@@ -535,6 +537,7 @@ main {
           flex-flow: column nowrap;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 section {

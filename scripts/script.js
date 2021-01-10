@@ -1,4 +1,4 @@
-// const wrapper = document.querySelector("#scroll-wrapper")
+const wrapper = document.querySelector("#scroll-wrapper")
 const logoFix = document.querySelector("#logo-fix")
 const aside = document.querySelector("#page-buttons")
 
@@ -15,8 +15,12 @@ const lineThree = document.querySelector("#line-three")
 const lineFour = document.querySelector("#line-four")
 const lineFive = document.querySelector("#line-five")
 
-window.addEventListener("scroll", () => {
-    if (this.scrollY > 199) {
+// window.addEventListener("scroll", () => {
+wrapper.addEventListener("scroll", () => {
+
+    console.log(wrapper.scrollTop);
+
+    if (wrapper.scrollTop > 700) {
         activate(aside)
         activate(logoFix)
     } else {
@@ -28,14 +32,14 @@ window.addEventListener("scroll", () => {
     removeActiveLines()
     
     // boxOne machen
-    if (this.scrollY < 866 ) activate(lineTwo)
-    if (this.scrollY > 866 && this.scrollY < 1060 ) activate(boxTwo)
-    if (this.scrollY > 1060 && this.scrollY < 1700 ) activate(lineThree)
-    if (this.scrollY > 1700 && this.scrollY < 1960 ) activate(boxThree)
-    if (this.scrollY > 1960 && this.scrollY < 2570 ) activate(lineFour)
-    if (this.scrollY > 2570 && this.scrollY < 3060 ) activate(boxFour)
-    if (this.scrollY > 3060 && this.scrollY < 3560 ) activate(lineFive)
-    if (this.scrollY > 3560) activate(boxFive)
+    if (wrapper.scrollTop < 866 ) activate(lineTwo)
+    if (wrapper.scrollTop > 866 && wrapper.scrollTop < 1060 ) activate(boxTwo)
+    if (wrapper.scrollTop > 1060 && wrapper.scrollTop < 1700 ) activate(lineThree)
+    if (wrapper.scrollTop > 1700 && wrapper.scrollTop < 1960 ) activate(boxThree)
+    if (wrapper.scrollTop > 1960 && wrapper.scrollTop < 2570 ) activate(lineFour)
+    if (wrapper.scrollTop > 2570 && wrapper.scrollTop < 3060 ) activate(boxFour)
+    if (wrapper.scrollTop > 3060 && wrapper.scrollTop < 3560 ) activate(lineFive)
+    if (wrapper.scrollTop > 3560) activate(boxFive)
 })
 
 removeActiveBoxes = () => allBoxes.forEach((box) => deactivate(box))

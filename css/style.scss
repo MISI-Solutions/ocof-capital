@@ -413,7 +413,7 @@ main {
     place-items: center;
     font-size: 18px;
     color: rgba(21, 70, 113, 0.5);
-    // transition: all 0.2s;
+    transition: all 0.2s;
     cursor: pointer;
   }
   .box.active {
@@ -451,6 +451,7 @@ main {
   flex: none;
   flex-flow: column nowrap;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 section {
