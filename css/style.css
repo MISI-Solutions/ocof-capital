@@ -532,7 +532,16 @@ main {
 }
 
 #footer main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: rgba(240, 243, 246, 0.8);
+}
+
+#footer .contact-card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #footer .contact-card {
@@ -552,6 +561,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  margin-right: 50px;
 }
 
 #footer .contact-card a {
@@ -575,6 +585,10 @@ main {
   font-size: 26px;
   line-height: 35px;
   margin-bottom: 32px;
+}
+
+#footer .contact-card:last-of-type {
+  height: 50%;
 }
 
 #footer .social-icons {

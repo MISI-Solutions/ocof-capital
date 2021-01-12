@@ -452,7 +452,14 @@ main {
   display: flex;
 
   main {
+    display: flex;
     background: rgba(240, 243, 246, 0.8);
+    
+  }
+
+  .contact-card-wrapper {
+    display: flex;
+
   }
 
   .contact-card {
@@ -463,6 +470,7 @@ main {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    margin-right: 50px;
 
     a {
       margin-bottom: 32px;
@@ -486,6 +494,10 @@ main {
       margin-bottom: 32px;
     }
   }
+
+.contact-card:last-of-type {
+  height: 50%;
+}
 
   .social-icons {
     margin-top: 1rem;
