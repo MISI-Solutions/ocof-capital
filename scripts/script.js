@@ -19,9 +19,6 @@ const lineSix = document.querySelector("#line-six")
 
 // window.addEventListener("scroll", () => {
 wrapper.addEventListener("scroll", () => {
-
-    // console.log(wrapper.scrollTop);
-
     if (wrapper.scrollTop > 700) {
         activate(aside)
         activate(logoFix)
