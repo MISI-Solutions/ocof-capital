@@ -526,6 +526,83 @@ main {
   position: relative;
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer main {
+  background: rgba(240, 243, 246, 0.8);
+}
+
+#footer .contact-card {
+  border: 3px solid #c19313;
+  padding: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#footer .contact-card a {
+  margin-bottom: 32px;
+}
+
+#footer .contact-card h2,
+#footer .contact-card p,
+#footer .contact-card a,
+#footer .contact-card div {
+  color: #04243c;
+}
+
+#footer .contact-card span {
+  color: rgba(21, 70, 113, 0.5);
+}
+
+#footer .contact-card h2 {
+  font-family: "Alegreya", serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 35px;
+  margin-bottom: 32px;
+}
+
+#footer .social-icons {
+  margin-top: 1rem;
+  width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#footer .social-icons a {
+  margin: 0;
+}
+
+#footer #more {
+  margin: 52px 0 0;
+  border: 3px solid #c19313;
+  padding: 22px 33px;
+  font-size: 18px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#footer #more:hover {
+  color: white;
+  background-color: #c19313;
 }
 
 #logo-fix {

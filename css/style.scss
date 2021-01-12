@@ -449,6 +449,65 @@ main {
   position: relative;
   width: 100vw;
   height: 100vh;
+  display: flex;
+
+  main {
+    background: rgba(240, 243, 246, 0.8);
+  }
+
+  .contact-card {
+    border: 3px solid $accent;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    a {
+      margin-bottom: 32px;
+    }
+
+    h2,
+    p,
+    a,
+    div {
+      color: $primary;
+    }
+    span {
+      color: rgba($color: #154671, $alpha: 0.5);
+    }
+
+    h2 {
+      font-family: "Alegreya", serif;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 35px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+    width: 90px;
+    display: flex;
+    justify-content: space-around;
+    a {
+      margin: 0;
+    }
+  }
+
+  #more {
+    margin: 52px 0 0;
+    border: 3px solid $accent;
+    padding: 22px 33px;
+    font-size: 18px;
+    transition: all 0.3s;
+  }
+  #more:hover {
+    color: white;
+    background-color: $accent;
+  }
 }
 
 #logo-fix {
