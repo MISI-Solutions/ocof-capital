@@ -427,6 +427,101 @@ main {
   text-align: right;
 }
 
+#advisory-services {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#advisory-services .wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#advisory-services .container h2 {
+  text-transform: uppercase;
+  color: #c19313;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+#advisory-services .container p {
+  margin-top: 51px;
+  color: #04243c;
+  font-size: 20px;
+  margin: 28px 0 41px;
+}
+
+#advisory-services .container .hover-move {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+#advisory-services .container .hover-move:focus,
+#advisory-services .container .hover-move:hover {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+#advisory-services .container a {
+  font-weight: 500;
+  font-size: 20px;
+  color: #04243c;
+}
+
+#advisory-services .container a img {
+  margin-left: 19px;
+}
+
+#advisory-services aside {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  color: #c19313;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 52px;
+}
+
+#advisory-services aside p {
+  color: #c19313;
+  width: 236px;
+  line-height: 34px;
+}
+
+#advisory-services aside span {
+  color: #c19313;
+  font-weight: 500;
+  font-size: 32px;
+  font-family: "Alegreya", serif;
+}
+
+#advisory-services aside #divider {
+  width: 3px;
+  height: 66px;
+  background-color: #c19313;
+}
+
 #footer {
   position: relative;
   width: 100vw;
@@ -473,7 +568,7 @@ main {
 }
 
 #page-buttons #scroll-up-button {
-  margin: 0 auto 255px;
+  margin: 0 auto 200px;
   cursor: pointer;
 }
 
@@ -517,6 +612,9 @@ main {
 
 #page-buttons.active {
   opacity: 1;
+}
+
+#page-buttons.active a {
   pointer-events: all;
 }
 

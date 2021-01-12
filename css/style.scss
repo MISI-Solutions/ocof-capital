@@ -366,6 +366,85 @@ main {
   }
 }
 
+#advisory-services {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container {
+    h2 {
+      text-transform: uppercase;
+      color: $accent;
+      font-size: 24px;
+      line-height: 33px;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+
+    p {
+      margin-top: 51px;
+      // width: 585px;
+      color: $primary;
+      font-size: 20px;
+      margin: 28px 0 41px;
+    }
+
+    .hover-move {
+      transition: transform 0.3s ease-in-out;
+    }
+    .hover-move:focus,
+    .hover-move:hover {
+      transform: translateX(20px);
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 20px;
+      color: #04243c;
+
+      img {
+        margin-left: 19px;
+      }
+    }
+  }
+
+  aside {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: $accent;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 52px;
+
+    p {
+      color: $accent;
+      width: 236px;
+      line-height: 34px;
+    }
+    span {
+      color: $accent;
+      font-weight: 500;
+      font-size: 32px;
+      font-family: "Alegreya", serif;
+    }
+    #divider {
+      width: 3px;
+      height: 66px;
+      background-color: $accent;
+    }
+  }
+}
+
 #footer {
   position: relative;
   width: 100vw;
@@ -400,7 +479,7 @@ main {
   pointer-events: none;
 
   #scroll-up-button {
-    margin: 0 auto 255px;
+    margin: 0 auto 200px;
     cursor: pointer;
   }
 
@@ -439,7 +518,9 @@ main {
 }
 #page-buttons.active {
   opacity: 1;
-  pointer-events: all;
+  a {
+    pointer-events: all;
+  }
 }
 
 #scroll-wrapper {
