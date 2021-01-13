@@ -454,12 +454,10 @@ main {
   main {
     display: flex;
     background: rgba(240, 243, 246, 0.8);
-    
   }
 
   .contact-card-wrapper {
     display: flex;
-
   }
 
   .contact-card {
@@ -470,7 +468,6 @@ main {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin-right: 50px;
 
     a {
       margin-bottom: 32px;
@@ -495,9 +492,10 @@ main {
     }
   }
 
-.contact-card:last-of-type {
-  height: 50%;
-}
+  .contact-card:last-of-type {
+    height: 50%;
+    margin-left: 50px;
+  }
 
   .social-icons {
     margin-top: 1rem;
@@ -609,4 +607,38 @@ main {
 section {
   scroll-snap-align: center;
   flex: none;
+}
+
+@media (max-width: 1300px) {
+  .placeholder {
+    width: 150px;
+  }
+
+  nav {
+    padding: 50px 50px !important;
+    .nav-links {
+      a:not(:last-child) {
+        margin-right: 25px !important;
+      }
+
+      // pageMargin weniger rechts links
+    }
+  }
+  #services {
+    margin: 50px 50px !important;
+  }
+
+  main {
+    padding-left: 50px;
+  }
+
+  #logo-fix {
+    left: 50px;
+  }
+  #page-buttons {
+    width: 150px;
+  }
+}
+
+@media (max-width: 869px) {
 }

@@ -561,7 +561,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin-right: 50px;
 }
 
 #footer .contact-card a {
@@ -589,6 +588,7 @@ main {
 
 #footer .contact-card:last-of-type {
   height: 50%;
+  margin-left: 50px;
 }
 
 #footer .social-icons {
@@ -734,5 +734,29 @@ section {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+}
+
+@media (max-width: 1300px) {
+  .placeholder {
+    width: 150px;
+  }
+  nav {
+    padding: 50px 50px !important;
+  }
+  nav .nav-links a:not(:last-child) {
+    margin-right: 25px !important;
+  }
+  #services {
+    margin: 50px 50px !important;
+  }
+  main {
+    padding-left: 50px;
+  }
+  #logo-fix {
+    left: 50px;
+  }
+  #page-buttons {
+    width: 150px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
