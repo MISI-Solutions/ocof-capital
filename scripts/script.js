@@ -17,6 +17,9 @@ const lineFour = document.querySelector("#line-four")
 const lineFive = document.querySelector("#line-five")
 const lineSix = document.querySelector("#line-six")
 
+/* const hamburgerButton = document.querySelector(".hamburger")
+hamburgerButton.addEventListener("click", () => hamburgerButton.classList.toggle("open")) */
+
 // window.addEventListener("scroll", () => {
 wrapper.addEventListener("scroll", () => {
     if (wrapper.scrollTop > 700) {
